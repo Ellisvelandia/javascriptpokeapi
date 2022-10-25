@@ -1,14 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
-  <title>Javascript PokeAPI</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="./images/pokemonIco.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <title>Javascript PokeAPI</title>
+  </head>
+  <body>
+    <header>
+      <img src="images/hero.png" alt="pokeApi Paginacion" />
+      <div class="limit">
+        <p>By pages</p>
+        <select id="limit" onchange="changePg(value)">
+          <option value="40">40</option>
+          <option value="60">60</option>
+          <option value="80">80</option>
+        </select>
+      </div>
+      <div class="navigation">
+        <button onclick="prev()">«</button>
+        <div class="numbers"></div>
+        <button onclick="next()">»</button>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="pokemons"></div>
+      </div>
+    </section>
+    <footer>
+      <p class="author">
+        <a href="https://github.com/Ellisvelandia" target="_blank"
+          >Pokemons 2022 <img class="pkb" src="images/pkb.png" alt="pkb"></a
+        >
+      </p>
+    </footer>
+  </body>
 </html>

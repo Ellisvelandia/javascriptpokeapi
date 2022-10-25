@@ -4,13 +4,14 @@ body {
     font-family: 'Baloo 2', 'helvetica', cursive;
     margin: 0;
 }
+
 .container {
     max-width: 1000px;
     margin: 15px auto;
 }
 /* header */
 header {
-    background-color: #7d4ce0;
+    background-color: #d40707;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -19,19 +20,23 @@ header {
     padding: 5% 0;
     font-weight: 700;
 }
+
 header h2 {
     margin: 0;
     font-size: 50px;
 }
+
 header .limit p {
     font-size: 20px;
     margin: 0;
 }
+
 header .limit {
     display: flex;
     gap: 10px;
     margin-top: 16px;
 }
+
 header .limit select {
     outline: none;
     font-size: 20px;
@@ -48,6 +53,7 @@ header .limit select {
     justify-content: center;
     margin-top: 4%;
 }
+
 .pokemons div {
     border-radius: 10px;
     width: 20%;
@@ -61,6 +67,7 @@ header .limit select {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
     position: relative;
 }
+
 .pokemons div .order {
     position: absolute;
     top: 4px;
@@ -69,10 +76,12 @@ header .limit select {
     color: darkgray;
     margin: 0;
 }
+
 .pokemons div img {
     width: 100%;
     transition: 1s;
 }
+
 .pokemons div:hover > img {
     transform: scale(1.5);
     
@@ -83,10 +92,12 @@ header .limit select {
     align-items: center;
     margin-top: 2%;
 }
+
 .navigation .numbers {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .navigation .numbers span button {
     font-size: 20px;
     padding: 0 2px;
@@ -97,10 +108,12 @@ header .limit select {
     cursor: pointer;
     margin: 0 2px;
 }
+
 .navigation .numbers button:hover {
     border-radius: 25px;
     box-shadow: rgb(253 253 253 / 34%) 0px 0px 0px 2px;
 }
+
 .navigation > button {
     font-size: 20px;
     border: 0;
@@ -110,9 +123,11 @@ header .limit select {
     background-color: #fff;
     border-radius: 6px;
 }
+
 .navigation > button:hover {
     transform: scale(1.3);
 }
+
 .current button{
     box-shadow: rgb(253 253 253 / 34%) 0px 0px 0px 2px;
     border-radius: 25px;
@@ -120,7 +135,7 @@ header .limit select {
 /* footer */
 footer {
     padding: 3% 0;
-    background-color: #7d4ce0;
+    background-color: #d40707;
 }
 
 p.author {
@@ -128,8 +143,17 @@ p.author {
     justify-content: center;
     gap: 7px;
 }
+
 p.author a {
     text-decoration: none;
-    font-weight: 700;
-    color: #000;
+    font-weight: 900;
+    color: #fff;
+}
+
+.pkb  {
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+    width: 120px;
+    height: 80px;
 }
